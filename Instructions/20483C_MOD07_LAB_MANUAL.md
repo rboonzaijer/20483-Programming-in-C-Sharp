@@ -124,7 +124,7 @@ Finally, you will run the application and verify that the data validation works 
    - If the class is full, throw a new **ClassFullException** exception.
    - If the student who is passed to the method is not already enrolled in a class, set the **TeacherID** property of the **Student** object to the **UserID** of the current teacher.
    - Otherwise, throw a new **ArgumentException** exception.
-8. In the **Views** folder, in the **AssignStudentDialog.xaml.cs**, locate the **Student_Click** method.
+8. In the **Controls** folder, in the **AssignStudentDialog.xaml.cs**, locate the **Student_Click** method.
 9. Towards the end of the method, before the call to the **Refresh** method, add code to:
    - Call the **EnrollInClass** method to assign the student to this teacher’s class, passing the student as a parameter.
    - Save the updated student/class information back to the database.
